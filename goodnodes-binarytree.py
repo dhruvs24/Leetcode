@@ -5,7 +5,7 @@ class Solution:
             if root is None:
                 return 0
             res = 1 if root.val >= maxVal else 0
-            maxVal = (maxVal, root.val)
+            maxVal = max(maxVal, root.val)
             res += dfs(root.left, maxVal)
             res += dfs(root.right, maxVal)
             return res
