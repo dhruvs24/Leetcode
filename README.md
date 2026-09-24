@@ -1,1 +1,1 @@
-Some data structures and algorithm problems I've been working on
+Some data structures and algorithms problems I've been working on
