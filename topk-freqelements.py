@@ -1,3 +1,4 @@
+# Suboptimal solution O(nlogn) time
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         num_to_freq = {}
