@@ -1,0 +1,1 @@
+SELECT id FROM Weather AS w1 WHERE temperature > (SELECT temperature FROM Weather AS w2 WHERE recordDate = w1.recordDate - 1);
