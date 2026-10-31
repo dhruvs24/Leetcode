@@ -13,4 +13,19 @@ def fibonacci_faster(n):
         return memo[n]
     memo[n] = fibonacci_faster(n - 1) + fibonacci_faster(n-2)
     return memo[n]
-    
+
+
+# Leetcode climbing stairs
+class Solution(object):
+    def climbStairs(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        one = 1
+        two = 1
+        for num in range(n-1):
+            temp = one
+            one = one + two
+            two = temp
+        return one
